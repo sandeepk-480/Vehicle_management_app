@@ -9,13 +9,15 @@ Admin- Can perform update and view <br>
 User- Can view <br>
 
 <h3>How to Use it?</h3>
-<h4>Run this following commands</h4>
+<h4>follow this and, run the following commands</h4>
 
-1) git clone https://github.com/sandeepk-480/Vehicle_management_app.git <br>
-2) pip install -r req.txt <br>
-3) cd vehicle_management_app <br>
-4) python manage.py loaddata > data.json <br>
-5)  python manage.py runserver <br>
+1) open VS Code, or any of  your code editor. <br>
+2) open a new terminal. <br>
+3) git clone https://github.com/sandeepk-480/Vehicle_management_app.git <br>
+4) pip install -r req.txt <br>
+5) cd vehicle_management_app <br>
+6) python manage.py loaddata > data.json <br>
+7)  python manage.py runserver <br>
 
 Roles: <br><br>
 
