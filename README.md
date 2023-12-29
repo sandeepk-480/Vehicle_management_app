@@ -24,11 +24,9 @@ Roles: <br><br>
 1) Super Admin- (also superuser)<br>
 username- superadmin<br>
 password- admin<br>
-<br>
 3) Admin-<br>
 username- admin<br>
 password- vehicle123<br>
-<br>
 3) User-<br>
 username- user<br>
 password- vehicle123<br>
