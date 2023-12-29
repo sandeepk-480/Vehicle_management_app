@@ -19,7 +19,7 @@ User- Can view <br>
 6) python manage.py loaddata > data.json <br>
 7)  python manage.py runserver <br>
 
-Roles: <br><br>
+Roles: <br>
 
 1) Super Admin- (also superuser)<br>
 username- superadmin<br>
