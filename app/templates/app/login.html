@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+
+    {% comment %} For messages {% endcomment %}
+    <div class="message-js">
+        {% if messages %}
+            {% for message in messages %}
+                <span class="{{message.tags}}">{{message}}</span>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    {% comment %} Header {% endcomment %}
+    <div class="header">Please Login</div>
+
+    {% comment %} For non field errors and form errors {% endcomment %}
+    <div class="errors">
+        {% if form.non_field_errors %}
+            {% for error in form.non_field_errors %}
+                {{error}}
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    {% comment %} Main Content {% endcomment %}
+    <div class="flex">
+        <div class="login_form">
+            <form action="{% url "login" %}" method="post">
+                {% csrf_token %}
+
+                {% for i in form %}
+                    {{i.label_tag}} {{i}} <span class="errors">{{i.errors|striptags}}</span>
+                {% endfor %} <br>
+
+                <div class="check">
+                    <input type="checkbox" class="show_pass" onclick="togglePassword_login()"> <span class="showpass">Show Password</span> <br>
+                </div>
+
+                <div class="btn">
+                    <input class="login-css" type="submit" value="Submit">
+                    <a role="button" class="register-css" href="{% url "register" %}">Register</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="{% static "js/script.js" %}"></script>
+
+</body>
+</html>
