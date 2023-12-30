@@ -8,5 +8,5 @@ class Vehicle(models.Model):
 
     vehicle_no = models.CharField(max_length=50)
     vehicle_type = models.CharField(max_length=50, choices=types, default='--select type--')
-    vehicle_model = models.CharField(max_length=50)
-    vehicle_desc = models.CharField(max_length=50)
+    vehicle_model = models.TextField()
+    vehicle_desc = models.TextField()

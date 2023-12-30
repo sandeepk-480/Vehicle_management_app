@@ -30,3 +30,4 @@ setTimeout(() => {
         dashboard.style.display = 'none';
     }
 }, 3000);
+

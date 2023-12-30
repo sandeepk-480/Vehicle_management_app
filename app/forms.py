@@ -11,6 +11,8 @@ class RegisterForm(UserCreationForm):
 
 
 class VehicleForm(forms.ModelForm):
+    vehicle_model = forms.CharField(widget=forms.TextInput)
+    vehicle_desc = forms.CharField(widget=forms.TextInput)
     class Meta:
         model = Vehicle
         fields = '__all__'
