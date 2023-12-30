@@ -16,8 +16,7 @@ User- Can view <br>
 3) git clone https://github.com/sandeepk-480/Vehicle_management_app.git <br>
 4) cd vehicle_management_app <br>
 5) pip install -r req.txt <br>
-6) python manage.py loaddata > data.json <br>
-7)  python manage.py runserver <br>
+6)  python manage.py runserver <br>
 
 Roles: <br>
 
