@@ -14,8 +14,8 @@ User- Can view <br>
 1) open VS Code, or any of  your code editor. <br>
 2) open a new terminal. <br>
 3) git clone https://github.com/sandeepk-480/Vehicle_management_app.git <br>
-4) pip install -r req.txt <br>
-5) cd vehicle_management_app <br>
+4) cd vehicle_management_app <br>
+5) pip install -r req.txt <br>
 6) python manage.py loaddata > data.json <br>
 7)  python manage.py runserver <br>
 
