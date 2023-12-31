@@ -15,7 +15,7 @@ User- Can view <br>
 2) open a new terminal. <br>
 3) git clone https://github.com/sandeepk-480/Vehicle_management_app.git <br>
 4) cd vehicle_management_app <br>
-5) pip install -r req.txt <br>
+5) pip install -r requirements.txt <br>
 6)  python manage.py runserver <br>
 
 Roles: <br>
