@@ -26,7 +26,7 @@ class VehicleForm(forms.ModelForm):
     
     def clean_vehicle_no(self):
         num = self.cleaned_data['vehicle_no']
-        if not num.isalnum():
+        if not (num.isalnum()  and not num.isalpha() and not num.isdigit()):
             raise forms.ValidationError('Enter valid vehicle number')
         return num
 
